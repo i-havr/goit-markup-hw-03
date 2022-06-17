@@ -1,0 +1,250 @@
+/* Основний колір тексту #212121
+Додатковий колір тексту
+Основний фоновий колір #ffffff
+Додатковий фоновий колір #f5f4fa
+Акцент - текст #2196f3
+Акцент - фон #2196f3
+Колір контактів хедера #757575
+Колір контактів футера rgba(255, 255, 255, 0.6)
+Колір адреси у футері #ffffff */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-text-color: #ffffff;
+  --primary-bg: #ffffff;
+  --secondary-bg: #f5f4fa;
+  --other-bg: #2f303a;
+  --accent-bg: #2196f3;
+
+  /* Інтерактивні елементи (посилання) */
+  --links-accent-text-color: #2196f3;
+}
+
+/* Base */
+body {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Header */
+.header a {
+  text-decoration: none;
+}
+
+/* Logo */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.logo-accent {
+  color: var(--accent-bg);
+}
+
+/* Navigation list */
+
+.nav-list a {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--links-accent-text-color);
+}
+
+.nav-list .nav-link.current {
+  color: var(--links-accent-text-color);
+}
+
+/* Contacts list */
+
+.contacts-list a {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.contacts-list a:hover,
+.contacts-list a:focus {
+  color: var(--links-accent-text-color);
+}
+
+/* Main */
+
+/* Hero */
+.hero {
+  background-color: var(--other-bg);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-family: inherit;
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-bg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Benefits */
+.item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.item-text {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* Team */
+.team {
+  background-color: var(--secondary-bg);
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.position {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* Footer */
+
+.footer a {
+  text-decoration: none;
+  font-style: normal;
+}
+.footer {
+  background-color: var(--other-bg);
+}
+
+/* Address */
+.footer .logo {
+  color: var(--white-text-color);
+}
+.address-list a {
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.address-list a:hover,
+.address-list a:focus {
+  color: var(--links-accent-text-color);
+}
+
+.address .address-map {
+  color: var(--white-text-color);
+}
+.address-mail,
+.address-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio */
+
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: var(--secondary-bg);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus,
+.active-btn:active {
+  background: var(--accent-bg);
+  color: var(--accent-text-color);
+}
+
+.portfolio-list a {
+  text-decoration: none;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.portfolio-desc {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
