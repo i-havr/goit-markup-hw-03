@@ -124,7 +124,7 @@ ul {
   display: flex;
 }
 
-.nav-link {
+.nav-list {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -135,13 +135,12 @@ ul {
   margin-left: 50px;
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
-  color: var(--links-accent-text-color);
-}
-
-.nav-list a:visited {
+.nav-link:visited {
   color: var(--primary-text-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--links-accent-text-color);
 }
 
 .nav-link {
