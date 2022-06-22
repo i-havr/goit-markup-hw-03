@@ -106,7 +106,6 @@ ul {
 
 /* Logo */
 .logo {
-  margin-right: 93px;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -114,6 +113,12 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+.header .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .logo-accent {
   color: var(--accent-bg);
 }
@@ -122,6 +127,7 @@ ul {
 
 .nav-list {
   display: flex;
+  margin-left: 93px;
 }
 
 .nav-link {
@@ -164,6 +170,12 @@ ul {
   margin-left: 50px;
 }
 
+.contacts-mail,
+.contacts-tel {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .contacts-list a {
   font-weight: 500;
   line-height: 1.2;
@@ -186,10 +198,11 @@ ul {
   background-color: var(--other-bg);
 }
 .hero-title {
-  padding-left: 252px;
-  padding-right: 252px;
+  width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -248,10 +261,6 @@ ul {
   margin-left: 30px;
 }
 
-.benefits.section {
-  padding-bottom: 0;
-}
-
 .item-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -271,6 +280,10 @@ ul {
 
 .about-list {
   display: flex;
+}
+
+.about.section {
+  padding-top: 0;
 }
 
 .about-list .about-item + .about-item {
@@ -298,7 +311,6 @@ ul {
 }
 
 .name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -315,7 +327,8 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.team-list li {
+.team-desc {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -331,17 +344,20 @@ ul {
 }
 
 .footer .logo {
+  display: block;
+  margin-bottom: 20px;
   color: var(--white-text-color);
 }
-/* Address */
 
-.address {
-  margin-top: 20px;
-}
+/* Address */
 
 .address-list a {
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.address-list > .address-li:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-list a:hover,
@@ -354,8 +370,6 @@ ul {
 }
 .address-mail,
 .address-tel {
-  display: inline-block;
-  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -364,8 +378,7 @@ ul {
 .portfolio-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-filter > .item:not(:last-child) {
   margin-right: 8px;
@@ -398,8 +411,6 @@ ul {
 .portfolio-list a {
   text-decoration: none;
 }
-
-/* ПИТАННЯ! */
 
 .portfolio-list {
   display: flex;
